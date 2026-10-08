@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+h2,
+p,
+ul,
+address {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Location ===== */
+.location {
+  max-width: 572px;
+  margin: 0 auto;
+  padding: 27px 16px 0;
+  text-align: center;
+}
+
+.location__image {
+  margin: 0 auto;
+}
+
+.location__title {
+  margin-top: 19px;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.location__title--follow {
+  margin-top: 20px;
+}
+
+.location__address {
+  margin-top: 40px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.location__text {
+  margin-top: 31px;
+  line-height: 1.56;
+}
+
+/* ===== Social ===== */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  border-radius: 50%;
+  transition: transform 250ms ease;
+}
+
+.social__link:hover,
+.social__link:focus-visible {
+  transform: scale(1.1);
+}
+
+/* the provided icons are black; the filter tints them to lavender #bca5c3 */
+.social__icon {
+  filter: invert(72%) sepia(12%) saturate(436%) hue-rotate(241deg)
+    brightness(92%) contrast(98%);
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 36px 16px 44px;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 18px;
+}
+
+.footer__link:hover,
+.footer__link:focus-visible {
+  text-decoration: underline;
+}
